@@ -1,0 +1,18 @@
+def solution():
+    N = int(input())
+    
+    if N == 3:
+        print("1 2 3")
+        return
+    
+    print(str(N) + " " + str(N - 2), end= " ")
+    
+    for i in range(1, N - 3):
+        print(i, end=" ")
+        
+    print(str(N - 3) + " " + str(N - 1))
+    
+T = int(input())
+while(T > 0):
+    T = T - 1 
+    solution()
